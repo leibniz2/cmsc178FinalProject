@@ -46,7 +46,7 @@ bool GameOverState::onEnter()
 {
     // parse the state
     StateParser stateParser;
-    stateParser.parseState("data/controls.xml", s_gameOverID, &m_gameObjects, &m_textureIDList);
+    stateParser.parseState("assets/xml/controls.xml", s_gameOverID, &m_gameObjects, &m_textureIDList);
 
     m_callbacks.push_back(0);
     m_callbacks.push_back(s_gameOverToMain);

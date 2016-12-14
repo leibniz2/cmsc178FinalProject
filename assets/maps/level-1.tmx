@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="15" tilewidth="32" tileheight="32" nextobjectid="81">
  <properties>
-  <property name="bird" value="bird.png"/>
-  <property name="clouds" value="level1_bg.png"/>
-  <property name="coin" value="jewel.png"/>
-  <property name="player" value="player.png"/>
+  <property name="bird" value="../images/bird.png"/>
+  <property name="clouds" value="../images/level1_bg.png"/>
+  <property name="coin" value="../images/jewel.png"/>
+  <property name="player" value="../images/player.png"/>
  </properties>
  <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198">
-  <image source="blocks1.png" width="614" height="376"/>
+  <image source="../images/blocks1.png" width="614" height="376"/>
  </tileset>
  <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198">
-  <image source="blocks2.png" width="614" height="376"/>
+  <image source="../images/blocks2.png" width="614" height="376"/>
  </tileset>
  <objectgroup name="Background">
   <object id="1" name="Background" type="ScrollingBackground" x="0" y="0" width="32" height="32">

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="15" tilewidth="32" tileheight="32" nextobjectid="118">
  <properties>
-  <property name="bird" value="bird.png"/>
-  <property name="clouds" value="level2_bg.jpg"/>
-  <property name="coin" value="jewel.png"/>
-  <property name="ninja" value="ninja.png"/>
-  <property name="player" value="player.png"/>
+  <property name="bird" value="../images/bird.png"/>
+  <property name="clouds" value="../images/level2_bg.jpg"/>
+  <property name="coin" value="../images/jewel.png"/>
+  <property name="ninja" value="../images/ninja.png"/>
+  <property name="player" value="../images/player.png"/>
  </properties>
  <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198">
-  <image source="blocks1.png" width="614" height="376"/>
+  <image source="../images/blocks1.png" width="614" height="376"/>
  </tileset>
  <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198">
-  <image source="blocks2.png" width="614" height="376"/>
+  <image source="../images/blocks2.png" width="614" height="376"/>
  </tileset>
  <objectgroup name="Background">
   <object id="1" name="Background" type="ScrollingBackground" x="0" y="-300" width="32" height="32">
@@ -34,7 +34,7 @@
    <property name="collidable" value="true"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmUlOwzAUhh12cICK8RgcgWnTDSyAthyg0C1sKIMEgj3DBYArUCiHgX0RCA4APKu2eBg7fnbSOAV/0q9mcgjp+/KSlLFIJJKFbugDiERKTPQj8l/polC20SUSKZLlhLGVJJ99zcJ+FiFLhv312Hed91AikWHA15U5GDMPWYCsQdYJfhRBg7DNJeRcCdMs062/cEzRdCB3IhI53wlwPGVnG+p2B3ICOc2pZ2C4G1siOmx+2O6pqPdbqhcmT9R6x5+6ZXj7UDVPBdf/s5KxpJ9hceRKZBBsDMADE1Q/1GXUe6y0vlMnjKf0kzIy6/gd8rqXDtgS2pF9yIGYPhA5hBxBjsXyGxFJXRMXuBM4RdEi+NHTzFP8SOsXpvNj8mHYPFlz+A5d3CiLIzZUPwbBOGQCMgmZgkxDZnL+G9yPPYsfeFqN7d2V6oe8dtSY33XElzPNMtszh24MhVU4l5uQmkg9xZU0N1jKuiIduRXHyXNPHHPN/PwYEf/3I+TJY3xe7Cb9tIUfe0Q/TOs4qgs6N2qOx9lgP3uHT81einGuY3394GwS+odP3+AZFemxcvSRqmYZ9gNfA03TKm+QdzSv9oq8+4QJFz+yYHND9cAEr1mXZ2y+LfaDWvM+PnGaST9tix++bmA/8uwjskfI92QuvaLKfjvi2j9GNOerIvpvKCjPEXn44ds3dLi8e5XbqX64OOJLmh9Z3MB+yHRZ2D5SZb8d8b2/wlQCuvHKaLVPfcYo6rdztc7Vejet122vTuNPOd3JkDQ+c84H2neWYw4VHb77ahK8aibm8dwN/k6d4kdLE1n7D6x4P3x5CX0AkT/JF9vxKl4=
+   eJztmUlOwzAUhh12cADEeAs4AtOmG1gALRyg0C1sGIoEgj3DBYArUCiHgX0RCA4APKu2MO5z/OykcQr+pF/N5BDS9+UlKWORSCQL7dAHEImUmOhH5L/SVkLZBkskUiTLCWMrST77moX9LEKWDPvrsJ867yiJRAYBX1fmYMw8ZAGyBlkn+FEEG4RtriAXWhiyDFt/6ZiiaUHuRSRyvhXgeMrODtTtLuQUcpZTz1DhbmyLYNj8sN1TUe+3dC9Mnuj1rn5iy9TtQ9U8FbX+X7SMJN0MiiPXIv1gsw8emKD6oS+j3mOl9Z0aYTyln5SRWcfvkNe9dMCW0I4cQppiuilyBDmGnIjltyKSGhIXuBNqiqJB8KODzFP8SOsXpvNj8mHQPFlz+A5d3CiLIzZ0P/rBGGQcMgGZhExBpnP+G9yPA4sf6rQe27sr3Q957agyv+uIL+fIMtszBzaGwiqcyy1IVaSW4kqaGyxlXZGO3Inj5Hkgjrlhfn4Mif/7CfLsMT4v9pJu9oUfB0Q/TOs4uguYG1XH49xgv3uHT81eiXGuY3394GwR+odP3+AZFumwcvSRCrJM9UO9Bpqmdd4hH8q83ivy7hMmXPzIgs0N3QMTvGZdnrH5tqof1Jr38YlTT7rZt/jh64bqR559RPYI+Z7MpVdUWK8jrv1jCDlfo6L/hoLyHJGHH759A8Pl3avcTvfDxRFf0vzI4obqh0ybhe0jFdbriO/9lcpoQDfeGK32qc8YRf12rte5Xu+m9dj2cnoG+ZTrWxmSxlfO+VT2neWYQwXDd191glf1xDyeu8HfqVP8aCCRtf/IivfDl9fQBxD5k3wDG10q+g==
   </data>
  </layer>
  <objectgroup name="Elements">

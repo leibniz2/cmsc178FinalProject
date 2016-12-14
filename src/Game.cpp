@@ -29,8 +29,8 @@ m_playerLives(3),
 m_bLevelComplete(false)
 {
     // add some level files to an array
-    m_levelFiles.push_back("data/gfx/level-1.tmx"); // level 1
-    m_levelFiles.push_back("data/gfx/level-2.tmx"); // level 2
+    m_levelFiles.push_back("assets/maps/level-1.tmx"); // level 1
+    m_levelFiles.push_back("assets/maps/level-2.tmx"); // level 2
 
 
     // start at this level
@@ -114,7 +114,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
         return false; // SDL init fail
     }
 
-    m_font = TTF_OpenFont("data/sansation.ttf", 18);
+    m_font = TTF_OpenFont("assets/fonts/sansation.ttf", 18);
     if ( m_font == NULL ) {
       std::cout << TTF_GetError() << std::endl;
     }
@@ -151,7 +151,7 @@ void Game::setCurrentLevel(int currentLevel)
       m_pGameStateMachine->changeState(new PlayState());
       m_bLevelComplete = false;
     } else {
-      m_pGameStateMachine->changeState(new MainMenuState());
+      m_pGameStateMachine->changeState(new GameOverState());
     }
 }
 

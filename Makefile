@@ -1,7 +1,7 @@
 PREFIX=/usr/local
 MAN_PREFIX=$(PREFIX)
 BIN_PREFIX=$(CURDIR)/bin
-DATA_PREFIX=data/
+DATA_PREFIX=assets/
 
 XX = g++
 SDL_LIB = -L/usr/local/lib -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image -Wl,-rpath=/usr/local/lib

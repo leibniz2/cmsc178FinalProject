@@ -54,7 +54,7 @@ bool MainMenuState::onEnter()
 {
     // parse the state
     StateParser stateParser;
-    stateParser.parseState(DATA_PREFIX "controls.xml", s_menuID, &m_gameObjects, &m_textureIDList);
+    stateParser.parseState("assets/xml/controls.xml", s_menuID, &m_gameObjects, &m_textureIDList);
 
     m_callbacks.push_back(0);
     m_callbacks.push_back(s_menuToPlay);

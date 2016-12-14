@@ -23,7 +23,7 @@ SoundManager::~SoundManager()
 
 bool SoundManager::load(std::string fileName, std::string id, sound_type type)
 {
-    fileName = DATA_PREFIX "sfx/" + fileName;
+    fileName = DATA_PREFIX "sounds/" + fileName;
     if(type == SOUND_MUSIC)
     {
         Mix_Music* pMusic = Mix_LoadMUS(fileName.c_str());
