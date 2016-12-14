@@ -21,4 +21,10 @@
  - Two levels
  - Complete Sprite animations
 
+#### Credits to these wonderful tutorials
+
+- LazyFoo tutorials
+- Shaun Mitchell guide to game development
+- opengltutorials.com and sdltutorials.com
+
 #### If you like this, please give me a star. :) <br> Feel free to submit pull requests and issues.
