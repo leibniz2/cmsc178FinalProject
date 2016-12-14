@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="15" tilewidth="32" tileheight="32" nextobjectid="118">
+ <properties>
+  <property name="bird" value="bird.png"/>
+  <property name="clouds" value="level2_bg.jpg"/>
+  <property name="coin" value="jewel.png"/>
+  <property name="ninja" value="ninja.png"/>
+  <property name="player" value="player.png"/>
+ </properties>
+ <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198">
+  <image source="blocks1.png" width="614" height="376"/>
+ </tileset>
+ <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2" tilecount="198">
+  <image source="blocks2.png" width="614" height="376"/>
+ </tileset>
+ <objectgroup name="Background">
+  <object id="1" name="Background" type="ScrollingBackground" x="0" y="-300" width="32" height="32">
+   <properties>
+    <property name="animSpeed" value="0.2"/>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="880"/>
+    <property name="textureID" value="clouds"/>
+    <property name="textureWidth" value="680"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Bottom" width="200" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt2MEJwkAQheHZS1pIWjCWEG1BhaQAm0mKSkG5pAEJCI4gBPZmxN3Z7P/BO+ztHd5cVgTIS+tEOhe7BbDde8PsGP/EvoC8cPO/mbwAAAAAAACEcnAitebI3w4Cu+rmbsZ312i/k+ZsvCf2p9fNDQns7pJAR+xL6db7eOh70RQGd1hpp7vBXoDvGbsAzBg/QRpm8lVe90FVkw==
+  </data>
+ </layer>
+ <layer name="Collision" width="200" height="15">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmUlOwzAUhh12cICK8RgcgWnTDSyAthyg0C1sKIMEgj3DBYArUCiHgX0RCA4APKu2eBg7fnbSOAV/0q9mcgjp+/KSlLFIJJKFbugDiERKTPQj8l/polC20SUSKZLlhLGVJJ99zcJ+FiFLhv312Hed91AikWHA15U5GDMPWYCsQdYJfhRBg7DNJeRcCdMs062/cEzRdCB3IhI53wlwPGVnG+p2B3ICOc2pZ2C4G1siOmx+2O6pqPdbqhcmT9R6x5+6ZXj7UDVPBdf/s5KxpJ9hceRKZBBsDMADE1Q/1GXUe6y0vlMnjKf0kzIy6/gd8rqXDtgS2pF9yIGYPhA5hBxBjsXyGxFJXRMXuBM4RdEi+NHTzFP8SOsXpvNj8mHYPFlz+A5d3CiLIzZUPwbBOGQCMgmZgkxDZnL+G9yPPYsfeFqN7d2V6oe8dtSY33XElzPNMtszh24MhVU4l5uQmkg9xZU0N1jKuiIduRXHyXNPHHPN/PwYEf/3I+TJY3xe7Cb9tIUfe0Q/TOs4qgs6N2qOx9lgP3uHT81einGuY3394GwS+odP3+AZFemxcvSRqmYZ9gNfA03TKm+QdzSv9oq8+4QJFz+yYHND9cAEr1mXZ2y+LfaDWvM+PnGaST9tix++bmA/8uwjskfI92QuvaLKfjvi2j9GNOerIvpvKCjPEXn44ds3dLi8e5XbqX64OOJLmh9Z3MB+yHRZ2D5SZb8d8b2/wlQCuvHKaLVPfcYo6rdztc7Vejet122vTuNPOd3JkDQ+c84H2neWYw4VHb77ahK8aibm8dwN/k6d4kdLE1n7D6x4P3x5CX0AkT/JF9vxKl4=
+  </data>
+ </layer>
+ <objectgroup name="Elements">
+  <object id="2" name="Player" type="Player" x="122.667" y="47.333" width="32" height="32">
+   <properties>
+    <property name="numFrames" value="3"/>
+    <property name="textureHeight" value="60"/>
+    <property name="textureID" value="player"/>
+    <property name="textureWidth" value="40"/>
+   </properties>
+  </object>
+  <object id="46" name="Coin" type="Coin" x="277" y="354" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="55" name="Coin" type="Coin" x="378" y="232" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="56" name="Coin" type="Coin" x="560" y="256" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="57" name="Coin" type="Coin" x="281" y="234" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="83" name="Coin" type="Coin" x="832" y="295" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="84" name="Coin" type="Coin" x="886" y="204" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="85" name="Coin" type="Coin" x="951" y="335" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="86" name="Coin" type="Coin" x="1470" y="105" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="87" name="Coin" type="Coin" x="1408" y="279" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="88" name="Coin" type="Coin" x="1586" y="235" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="89" name="Coin" type="Coin" x="1762" y="360" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="90" name="Coin" type="Coin" x="2003" y="239" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="91" name="Coin" type="Coin" x="2674" y="265" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="92" name="Coin" type="Coin" x="2760" y="200" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="93" name="Coin" type="Coin" x="2844" y="125" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="94" name="Coin" type="Coin" x="3043" y="94" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="95" name="Coin" type="Coin" x="3572" y="361" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="96" name="Coin" type="Coin" x="4105" y="357" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="97" name="Coin" type="Coin" x="4435" y="288" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="98" name="Coin" type="Coin" x="4310" y="134" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="99" name="Coin" type="Coin" x="4418" y="134" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="100" name="Coin" type="Coin" x="4674" y="361" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="101" name="Coin" type="Coin" x="5235" y="363" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="102" name="Coin" type="Coin" x="5219" y="182" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="103" name="Coin" type="Coin" x="5477" y="365" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="104" name="Coin" type="Coin" x="6049" y="335" width="56" height="42">
+   <properties>
+    <property name="numFrames" value="1"/>
+    <property name="textureHeight" value="42"/>
+    <property name="textureID" value="coin"/>
+    <property name="textureWidth" value="56"/>
+   </properties>
+  </object>
+  <object id="105" name="Bird" type="Bird" x="332.33" y="226.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="bird"/>
+    <property name="textureWidth" value="47"/>
+   </properties>
+  </object>
+  <object id="107" name="Bird" type="Bird" x="1831.33" y="224.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="bird"/>
+    <property name="textureWidth" value="47"/>
+   </properties>
+  </object>
+  <object id="108" name="Ninja" type="Ninja" x="2444.33" y="59.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="ninja"/>
+    <property name="textureWidth" value="45"/>
+   </properties>
+  </object>
+  <object id="109" name="Ninja" type="Ninja" x="2489.33" y="160.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="ninja"/>
+    <property name="textureWidth" value="45"/>
+   </properties>
+  </object>
+  <object id="110" name="Bird" type="Bird" x="1486.33" y="92.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="bird"/>
+    <property name="textureWidth" value="47"/>
+   </properties>
+  </object>
+  <object id="111" name="Bird" type="Bird" x="3050.33" y="122.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="bird"/>
+    <property name="textureWidth" value="47"/>
+   </properties>
+  </object>
+  <object id="112" name="Ninja" type="Ninja" x="4060.33" y="87.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="ninja"/>
+    <property name="textureWidth" value="45"/>
+   </properties>
+  </object>
+  <object id="113" name="Bird" type="Bird" x="4245.33" y="344.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="bird"/>
+    <property name="textureWidth" value="47"/>
+   </properties>
+  </object>
+  <object id="114" name="Ninja" type="Ninja" x="4333.33" y="35.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="ninja"/>
+    <property name="textureWidth" value="45"/>
+   </properties>
+  </object>
+  <object id="115" name="Ninja" type="Ninja" x="4864.33" y="71.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="ninja"/>
+    <property name="textureWidth" value="45"/>
+   </properties>
+  </object>
+  <object id="116" name="Bird" type="Bird" x="5376.33" y="346.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="4"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="bird"/>
+    <property name="textureWidth" value="47"/>
+   </properties>
+  </object>
+  <object id="117" name="Ninja" type="Ninja" x="5523.33" y="38.333" width="41" height="57">
+   <properties>
+    <property name="numFrames" value="6"/>
+    <property name="textureHeight" value="57"/>
+    <property name="textureID" value="ninja"/>
+    <property name="textureWidth" value="45"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Front" width="200" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztmk1uwjAQhZ1NjoDgDD0OrKGlsGqvUU6AxGGQco+uChKwygaq/iw7VWIxhPw4SmKP4vdJTw7jGI/keZpEilLVhIHBTcQzacG0NFvWGL3vo6X9pDGm85kYnlGba9tY3yaSctFMSTMm0G9seFFSnQ+DRNLgvchWH+oTLnuK9P1AO+DcgESOTBKAT4B0Ng3nAfCZtesEDNmS4px4nM6BW96ob6+C6wj6i0n9S/LIznUCCv7whTp1L8kjAHSNrveIjRH7nRfzxSMPwnrCh0r65t5xHr7A6zzKjEUxn/i0sMcTeXBu6MMz6aKSvA4d5gTue0CVP7I9Je8/QH3K3l1eKP6aSjOg6y8av61k5ydd1vVPxVzZvE/8fzcYsnf7E8V+M/cU+WMk7LkPABdwf2g/aX+YfpcLgA+858T+AG42RVg=
+  </data>
+ </layer>
+ <layer name="Killer" width="200" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt0tEJwjAUQNHmzxnU/YeoUIdwjbiDhqbwDAgmCiqcAxfS14Z+JNMEAAAAAAAAAAAA8FuO6bH9mz1zSGv8p56zfkV779o+5Xxvrm3rJTzHdWwJ+7Y9pRxm11qc5Tqbm3e5+a634jLQ6P9Ku/SdTtN49LkBujlL7w==
+  </data>
+ </layer>
+</map>

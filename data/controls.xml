@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<States>
+    <MENU>
+        <TEXTURES>
+            <texture filename="title.png" ID="title"/>
+            <texture filename="text1.png" ID="subtitle1"/>
+            <texture filename="text2.png" ID="subtitle2"/>
+            <texture filename="text3.png" ID="subtitle3"/>
+            <texture filename="ctr-text1.png" ID="ctrl1"/>
+            <texture filename="ctr-text2.png" ID="ctrl2"/>
+            <texture filename="ctr-text3.png" ID="ctrl3"/>
+            <texture filename="ctr-text4.png" ID="ctrl4"/>
+            <texture filename="button_play.png" ID="playbutton"/>
+            <texture filename="button_exit.png" ID="exitbutton"/>
+        </TEXTURES>
+
+        <OBJECTS>
+          <object type="MenuButton" x="10" y="10" width="584" height="100" textureID="title" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="116" y="115" width="409" height="34" textureID="subtitle1" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="105" y="145" width="429" height="34" textureID="subtitle2" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="170" y="173" width="299" height="37" textureID="subtitle3" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="64" y="250" width="287" height="37" textureID="ctrl1" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="64" y="290" width="305" height="37" textureID="ctrl2" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="64" y="330" width="208" height="37" textureID="ctrl3" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="64" y="370" width="267" height="37" textureID="ctrl4" numFrames="0" callbackID="0"/>
+          <object type="MenuButton" x="450" y="250" width="149" height="79" textureID="playbutton" numFrames="0" callbackID="1"/>
+          <object type="MenuButton" x="450" y="335" width="148" height="79" textureID="exitbutton" numFrames="0" callbackID="2"/>
+        </OBJECTS>
+    </MENU>
+
+    <PAUSE>
+        <TEXTURES>
+            <texture filename="resume.png" ID="resumebutton"/>
+            <texture filename="main.png" ID="mainbutton"/>
+        </TEXTURES>
+
+        <OBJECTS>
+            <object type="MenuButton" x="150" y="230" width="340" height="60" textureID="mainbutton" numFrames="0" callbackID="1"/>
+            <object type="MenuButton" x="150" y="300" width="340" height="60" textureID="resumebutton" numFrames="0" callbackID="2"/>
+        </OBJECTS>
+    </PAUSE>
+
+
+    <GAMEOVER>
+        <TEXTURES>
+            <texture filename="game_over.png" ID="gameovertext"/>
+            <texture filename="main.png" ID="mainbutton"/>
+            <texture filename="restart.png" ID="restartbutton"/>
+        </TEXTURES>
+
+        <OBJECTS>
+            <object type="MenuButton" x="150" y="100" width="340" height="100" textureID="gameovertext" numFrames="0" callbackID="0"/>
+            <object type="MenuButton" x="150" y="230" width="340" height="60" textureID="mainbutton" numFrames="0" callbackID="1"/>
+            <object type="MenuButton" x="150" y="300" width="340" height="60" textureID="restartbutton" numFrames="0" callbackID="2"/>
+        </OBJECTS>
+    </GAMEOVER>
+</States>
